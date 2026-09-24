@@ -2,7 +2,7 @@ import { DataTypes } from "sequelize";
 import sequelize from "../config/database.js";
 import usermodel from "./user.model.js";
 
-export const reportermodel= sequelize.define('Reporter', {
+const reportermodel= sequelize.define('Reporter', {
     id:{
         type:DataTypes.INTEGER,
         autoIncrement:true,
@@ -29,3 +29,5 @@ export const reportermodel= sequelize.define('Reporter', {
         }
     }
 })
+
+export default reportermodel

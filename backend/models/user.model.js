@@ -1,7 +1,7 @@
 import { DataTypes } from "sequelize";
-import sequelize from "../config/database";
+import sequelize from "../config/database.js";
 
-export const usermodel= sequelize.define('User', 
+ const usermodel= sequelize.define('User', 
     {
         id:{
             type:DataTypes.INTEGER,
@@ -23,7 +23,7 @@ export const usermodel= sequelize.define('User',
             allowNull:false
         },
         role:{
-            type:DataTypes.ENUM('analista', 'gerente', 'proovedor', 'seller'),
+            type:DataTypes.ENUM('analista', 'gerente', 'proovedor', 'vendedor'),
             defaultValue:'analista'
         }
     }, {

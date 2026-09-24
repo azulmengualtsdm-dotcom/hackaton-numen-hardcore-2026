@@ -2,7 +2,7 @@ import { DataTypes } from "sequelize";
 import sequelize from "../config/database.js";
 import usermodel from "./user.model.js";
 
-export const productsModel= sequelize.define('Products', {
+ const productsModel= sequelize.define('Products', {
     id:{
         type:DataTypes.INTEGER,
         autoIncrement:true,
@@ -38,5 +38,4 @@ export const productsModel= sequelize.define('Products', {
     underscored:true
 })
 
-usermodel.hasMany(productsModel, { foreignKey: 'supplier_id', as: 'products' });
-productsModel.belongsTo(usermodel, { foreignKey: 'supplier_id', as: 'supplier' });
+export default productsModel

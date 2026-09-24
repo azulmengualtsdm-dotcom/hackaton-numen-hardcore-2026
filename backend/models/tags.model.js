@@ -1,6 +1,6 @@
 import { DataTypes } from "sequelize";
 import sequelize from "../config/database.js";
-export const tagsModel=sequelize.define('tags', {
+const tagsModel=sequelize.define('tags', {
     id:{
         type:DataTypes.INTEGER,
         autoIncrement:true,
@@ -14,3 +14,5 @@ export const tagsModel=sequelize.define('tags', {
     timestamps:true,
     underscored:true
 })
+
+export default tagsModel
