@@ -16,11 +16,11 @@ import usermodel from "./user.model.js";
         type:DataTypes.INTEGER,
         allowNull:false
     },
-    state_shipment: { 
-        type: DataTypes.ENUM('Pendiente', 'En Camino', 'Entregado'),
-        defaultValue: 'Pendiente'
+    description: { 
+        type: DataTypes.STRING(250),
+        allowNull: true
     },
-    urgency_stock: { 
+    urgency_stock: {
         type: DataTypes.ENUM('Normal', 'Riesgo Crítico'),
         defaultValue: 'Normal'
     },
@@ -39,3 +39,4 @@ import usermodel from "./user.model.js";
 })
 
 export default productsModel
+

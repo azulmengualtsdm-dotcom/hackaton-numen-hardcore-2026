@@ -23,7 +23,7 @@ import sequelize from "../config/database.js";
             allowNull:false
         },
         role:{
-            type:DataTypes.ENUM('analista', 'gerente', 'proovedor', 'vendedor'),
+            type:DataTypes.ENUM('vendedor', 'gerente_compras', 'proovedor', 'transportista', 'control_calidad', 'analista'),
             defaultValue:'analista'
         }
     }, {
