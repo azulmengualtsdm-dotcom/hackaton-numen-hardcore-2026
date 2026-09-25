@@ -8,7 +8,7 @@ import { createRoot } from 'react-dom/client'
 // traducir los componentes de React al idioma que entienden los navegadores web (HTML comun).
 
 
-import './index.css'
+//import './index.css'
 import App from './App.jsx'
 
 
